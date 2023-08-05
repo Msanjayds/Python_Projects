@@ -1,0 +1,1 @@
+print('saik krupa')
