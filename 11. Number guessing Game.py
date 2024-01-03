@@ -1,85 +1,15 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "import random"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 5,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "guess = input('enter ur number')"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 7,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "10\n"
-     ]
-    }
-   ],
-   "source": [
-    "print(guess)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 8,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "done\n"
-     ]
-    }
-   ],
-   "source": [
-    "print('done')"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python 3",
-   "language": "python",
-   "name": "python3"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.11.4"
-  },
-  "orig_nbformat": 4
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+import random
+n = random.randrange(1,10)
+guess = int(input("Enter any number: "))
+while n != guess:
+    if guess < n :
+        print('too low')
+        guess = int(input("Enter any number: "))
+    elif guess > n:
+        print ('too high')
+        guess = int(input("Enter any number: "))
+    else:
+        break
+print('you guessed it Right')
+
+print('Finish')
